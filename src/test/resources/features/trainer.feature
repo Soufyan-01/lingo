@@ -33,7 +33,7 @@ Scenario: Start a new round
 
 Scenario Outline: Guessing a word
   Given | There is a <word to guess>
-  When | I make an <attempt> to the right word
+  When | I make an <attempt> to guess the right 5, 6 and 7 letter word
   Then | I will get <feedback> if the word is incorrect
 
   Examples:
@@ -43,7 +43,7 @@ Scenario Outline: Guessing a word
 
     | word to guess | attempt | feedback |
     | BAARD | BERGEN| INVALID, INVALID, INVALID, INVALID, INVALID, INVALID|
-    | BAARD | BONJE | CORRECT, ABSENT, ABSENT, ABSENT |
+    | BAARD | BONJE | CORRECT, ABSENT, ABSENT, ABSENT, ABSENT |
     | BAARD | BARST | CORRECT, CORRECT, PRESENT, ABSENT ABSENT |
     | BAARD | DRAAD | ABSENT, PRESENT, CORRECT, PRESENT, CORRECT  |
     | BAARD | BAARD | CORRECT, CORRECT, CORRECT, CORRECT, CORRECT |
